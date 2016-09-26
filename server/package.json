@@ -1,0 +1,27 @@
+{
+  "name": "rit-skywatch-preprocessor",
+  "version": "0.0.1",
+  "description": "Node server that calls to Skywatch API and sends to client",
+  "main": "server.js",
+  "scripts": {
+    "test": "eslint ./src",
+    "start": "node ./src/server.js"
+  },
+  "author": "T.J. Tarazevits",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.2.1",
+    "socket.io": "^1.4.8"
+  },
+  "dependencies": {
+    "request": "^2.75.0",
+    "socket.io": "^1.4.8"
+  },
+  "engines": {
+    "node": "6.5.0"
+  }
+}
