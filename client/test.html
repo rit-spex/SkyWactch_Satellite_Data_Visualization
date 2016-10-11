@@ -4,7 +4,7 @@
   <meta charset = "utf-8">
   <title>Demo API Calls</title>
   <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
- <script src = "././js/apiCall.js"></script 
+ <script src = "././js/apiCall.js"></script
 <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
 <script type = "text/babel" >
 
@@ -12,7 +12,19 @@
 </head>
 <body>
   Writing json data returned by api
+<br/>
+  <textarea id="response" cols ="100" rows ="10"></textarea><br/>
 
-  <div id="response"></div>
+  <div id = "controls">
+    api-key<input type = "text" name = "api_key" value = "CTgAvMShF74hRQ1cAFmhZaO2dcKootye2QfizXfm"><br/>
+    time-period<input type = "text" name = "time_period" value = "2015"><br/>
+    coordinates<input type = "text" name = "coordinates" value = "36.281389,-80.060278"><br/>
+    instrument-satellite<input type = "text" name = "instrument_satellite"><br/>
+    data-level<input type = "text" name = "data_level" value = "3"><br/>
+    max-resolution<input type = "text" name = "max_resolution"><br/>
+    max-cloudcover<input type = "text" name = "max_cloudcover"><br/>
+    wavelength-band<input type = "text" name = "wavelength_band"><br/>
+    <button type = "button" id="apiSubmit">Call API</button>
+  </div>
 </body>
 </html>
